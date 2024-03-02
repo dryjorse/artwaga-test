@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/core.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Figtree:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="loading hidden">
+        <img src="images/common/loading.svg" alt="loading" />
+      </div>
+      <div class="error hidden">
+        <div class="container">
+          <h1>Error</h1>
+          <span class="error-message"
+            >ERROR </span
+          >
+          <img
+            src="images/error/error-person.png"
+            alt="error-person"
+            class="error-person"
+          />
+          <img
+            src="images/error/figure.svg"
+            alt="figure"
+            class="error-figure"
+          />
+        </div>
+      </div>
+      <div class="main-block container">
+        <header>
+          <div></div>
+          <input type="text" placeholder="Search users..." class="search" />
+          <select name="sort-users" id="" class="sort-users">
+            <option selected value="name">By name</option>
+            <option value="email">By email</option>
+          </select>
+        </header>
+        <main>
+          <h1>USERS</h1>
+          <span class="subtitle">Made by Abdulazim</span>
+          <div class="users">
+            <button class="users-swiper-button-prev">
+              <img src="images/common/arrow-left.svg" alt="arrow-left" />
+            </button>
+            <div class="swiper users-swiper">
+              <div class="swiper-wrapper"></div>
+            </div>
+            <button class="users-swiper-button-next">
+              <img src="images/common/arrow-right.svg" alt="arrow-next" />
+            </button>
+          </div>
+          <div class="users__bottom">
+            <button class="btn update">update</button>
+          </div>
+        </main>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
+</html>

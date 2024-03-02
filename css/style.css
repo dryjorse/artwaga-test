@@ -1,0 +1,133 @@
+header {
+  padding-top: 104px;
+  display: flex;
+  justify-content: space-between;
+}
+.sort-users {
+  border: none;
+  border-radius: 24px;
+  padding: 13px 10px;
+  background-color: rgba(248, 68, 3, 1);
+  color: white;
+}
+.sort-users option {
+  height: 23px;
+}
+main {
+  padding-top: 80px;
+  text-align: center;
+}
+main h1 {
+  position: relative;
+  margin: 0 auto 28px;
+  width: fit-content;
+  font-size: 64px;
+}
+main h1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 8%;
+  width: 83%;
+  height: 100%;
+  background: linear-gradient(360deg, #f83600 0%, #f9d423 100%);
+  opacity: 0.5;
+  transform: skew(-50deg);
+  z-index: -1;
+}
+main .subtitle {
+  font-size: 20px;
+}
+.users {
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  gap: 170px;
+}
+.user-card {
+  border-radius: 24px;
+  padding: 40px 12px;
+  background: linear-gradient(0.54deg, #aa461b 0.61%, #ffc700 99.53%);
+}
+.user-card.swiper-slide {
+  width: 214px !important;
+  height: 304px !important;
+}
+.user-card .ava {
+  width: 129px;
+  height: 129px;
+}
+.user-card .user-name {
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(90deg, #505285 0%, #585e92 12%, #65689f 25%);
+  color: white;
+}
+.user-card__field {
+  margin-top: 14px;
+  border-radius: 5px;
+  padding: 7px 5px;
+  background-color: rgba(217, 217, 217, 1);
+  font-size: 10px;
+  color: black;
+}
+.users__bottom {
+  margin-top: 70px;
+  display: flex;
+  justify-content: end;
+}
+.users__bottom .btn {
+  text-transform: uppercase;
+}
+.loading {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../images/common/blur.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+.loading img {
+  animation: spin infinite 1s linear;
+}
+.error {
+  position: relative;
+  padding-top: 90px;
+  height: 100vh;
+}
+.error h1 {
+  font-size: 300px;
+  color: rgba(255, 0, 0, 1);
+  text-align: center;
+}
+.error-message {
+  max-width: 510px;
+  font-size: 32px;
+  line-height: 32px;
+  color: rgba(255, 0, 0, 1);
+}
+.error img {
+  position: absolute;
+}
+.error-person {
+  bottom: 0;
+  right: 117px;
+  z-index: 2;
+}
+.error-figure {
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
